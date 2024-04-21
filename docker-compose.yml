@@ -1,0 +1,12 @@
+version: "2:24"
+
+services:
+  simpleapp:
+    container_name: my-simple-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: meu-app:jre17
+    ports:
+      - "8080:8080"
+
